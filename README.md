@@ -6,6 +6,22 @@ A FastAPI backend + interactive vis.js frontend for checking drug-drug and drug-
 
 ---
 
+## Table of Contents
+
+- [Screenshots](#screenshots)
+- [Why I built this](#why-i-built-this)
+- [What it does](#what-it-does)
+- [Getting started](#getting-started)
+- [API endpoints](#api-endpoints)
+- [Drug name resolution](#drug-name-resolution)
+- [The graph UI](#the-graph-ui)
+- [Project structure](#project-structure)
+- [Running the tests](#running-the-tests)
+- [Data source](#data-source)
+- [Disclaimer](#disclaimer)
+
+---
+
 ## Screenshots
 
 ### Main graph view — betrixaban's interaction network (247 nodes)
@@ -18,6 +34,12 @@ A FastAPI backend + interactive vis.js frontend for checking drug-drug and drug-
 ![Side panel showing detailed interaction descriptions for the selected drug node](screenshots/node_selected.png)
 
 > Edge colors: **black** = contraindicated · **red** = major · **amber** = moderate · **yellow** = minor · **dashed** = drug-food
+
+---
+
+## Why I built this
+
+I kept reading about medication errors caused by undetected drug interactions — a preventable problem that gets worse the more medications a patient is on. I wanted to see whether a graph database approach could make interaction checking fast enough to be useful in a real clinical pipeline, and this project is me finding out.
 
 ---
 
