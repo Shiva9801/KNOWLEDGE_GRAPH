@@ -6,6 +6,21 @@ A FastAPI backend + interactive vis.js frontend for checking drug-drug and drug-
 
 ---
 
+## Screenshots
+
+### Main graph view — betrixaban's interaction network (247 nodes)
+![Main graph view showing betrixaban interaction network with colored edges indicating severity](screenshots/landing_page.png)
+
+### Warfarin — one of the most interaction-prone drugs (569 nodes)
+![Warfarin interaction network with 569 nodes, red edges indicating major interactions in the side panel](screenshots/warfarin_graph.png)
+
+### Side panel — interaction details on node selection
+![Side panel showing detailed interaction descriptions for the selected drug node](screenshots/node_selected.png)
+
+> Edge colors: **black** = contraindicated · **red** = major · **amber** = moderate · **yellow** = minor · **dashed** = drug-food
+
+---
+
 ## What it does
 
 Doctors, pharmacists, and researchers deal with polypharmacy every day — patients on 5, 8, even 12 medications at once. Manually checking every pair of drugs for interactions is error-prone and slow.
